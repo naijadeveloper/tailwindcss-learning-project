@@ -9,72 +9,148 @@
 
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-  <div> <!-- Content wrapper -->
-    <div> <!-- Navigation -->
-      <nav>
-        <div>
-          <h1>
-            <a href="/">Food Ninja</a>
+<body class="text-gray-600 font-body">
+  <div class="grid md:grid-cols-5"> <!-- Content wrapper -->
+    <div class="md:col-span-1 md:flex md:justify-end"> <!-- Navigation -->
+      <nav class="w-full text-right">
+        <div class="flex justify-between md:justify-end items-center w-full border-b border-gray-200">
+          <h1 class="font-bold uppercase p-4">
+            <a href="/" class="hover:text-gray-700">Food Villa</a>
           </h1>
+
+          <div id="burger" class="px-4 cursor-pointer md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </div>
         </div>
 
-        <ul>
-          <li>
-            <a href="#">
+        <ul id="menu" class="text-sm mt-6 hidden md:block">
+          <li class="text-gray-700 font-bold py-2">
+            <a href="#" class="px-4 flex justify-end border-r-4 border-primary">
               <span>Home</span>
+              <svg class="w-4 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+              </svg>
             </a>
           </li>
 
-          <li>
-            <a href="#">
-              <span>Home</span>
+          <li class="py-2">
+            <a href="#" class="px-4 flex justify-end border-r-4 border-transparent">
+              <span>About</span>
+              <svg class="w-4 ml-2" fill="#000000" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="m16 0c8.836556 0 16 7.163444 16 16s-7.163444 16-16 16-16-7.163444-16-16 7.163444-16 16-16zm0 2c-7.7319865 0-14 6.2680135-14 14s6.2680135 14 14 14 14-6.2680135 14-14-6.2680135-14-14-14zm1.3 18.5v2.6h-2.6v-2.6zm-1.3-11.5c2.209139 0 4 1.790861 4 4 0 1.8636009-1.2744465 3.4295388-2.9993376 3.873812l-.0006624 2.126188h-2v-4h1c1.1045695 0 2-.8954305 2-2s-.8954305-2-2-2c-1.0543618 0-1.9181651.8158778-1.9945143 1.8507377l-.0054857.1492623h-2c0-2.209139 1.790861-4 4-4z">
+                  </path>
+                </g>
+              </svg>
             </a>
           </li>
 
-          <li>
-            <a href="#">
-              <span>Home</span>
+          <li class="py-2">
+            <a href="#" class="px-4 flex justify-end border-r-4 border-transparent">
+              <span>Contact</span>
+              <svg class="w-4 ml-2" fill="#000000" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <title></title>
+                  <g id="mail">
+                    <path
+                      d="M29,6H3L2.92,6a.78.78,0,0,0-.21,0l-.17.07a.65.65,0,0,0-.15.1.67.67,0,0,0-.15.14l-.06.06a.36.36,0,0,0,0,.09,1.08,1.08,0,0,0-.08.19A1.29,1.29,0,0,0,2,6.9S2,7,2,7V25a1,1,0,0,0,1,1H29a1,1,0,0,0,1-1V7A1,1,0,0,0,29,6ZM16,14.81,6.2,8H27.09ZM4,24V8.91l11.43,7.91,0,0a1.51,1.51,0,0,0,.18.09l.08,0A1.09,1.09,0,0,0,16,17h0a1,1,0,0,0,.41-.1l.07,0,0,0L28,9.79V24Z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
             </a>
           </li>
         </ul>
       </nav>
     </div> <!-- end navigation-->
 
-    <main>
-      <div>
-        <a href="#">Log in</a>
-        <a href="#">Sign up</a>
+    <main class="px-16 py-6 bg-gray-100 md:col-span-4">
+      <div class="flex justify-center md:justify-end gap-2">
+        <a href="#" class="text-primary btn md:border-2 border-primary
+         md:hover:text-white md:hover:bg-primary transition ease-out duration-500">Log in</a>
+        <a href="#" class="text-primary btn md:border-2 border-primary
+         md:hover:text-white md:hover:bg-primary transition ease-out duration-500">Sign up</a>
       </div>
 
       <header>
-        <h2>Recipes</h2>
-        <h3>For Ninja</h3>
+        <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+        <h3 class="text-2xl font-semibold">For Villites</h3>
       </header>
 
       <div>
-        <h4>Latest Recipes</h4>
-        <div>
-          <!-- Cards for above heading-->
-          <div> <!-- A single card -->
-            <img src="" alt="">
-            <div>
-              <span>5 bean chilli stew</span>
-              <span>Recipe by Mario</span>
+        <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+        <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- Cards for above heading -->
+          <div class="card hover:shadow-lg"> <!-- A single card -->
+            <img src="img/Amala-and-ewedu-2.jpg" alt="Amala and Ewedu" class="w-full object-cover">
+            <div class="p-4 w-full border-t-0">
+              <span class="font-bold">Amala and Ewedu</span>
+              <span class="block text-gray-500 text-sm">Recipe by Abiola</span>
+            </div>
+            <div class="badge"> <!-- Badge -->
+              <svg class="w-4 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>1 hour</span>
+            </div>
+          </div> <!-- A single card end -->
+
+          <div class="card hover:shadow-lg"> <!-- A single card -->
+            <img src="img/Ogbono-soup-Draw-Soup.jpg" alt="Ogbono soup" class="w-full object-cover">
+            <div class="p-4 w-full border-t-0">
+              <span class="font-bold">Ogbono soup</span>
+              <span class="block text-gray-500 text-sm">Recipe by Chukwudi</span>
+            </div>
+            <div class="badge"> <!-- Badge -->
+              <svg class="inline-block w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>25 mins</span>
+            </div>
+          </div> <!-- A single card end -->
+
+          <div class="card hover:shadow-lg md:self-start"> <!-- A single card -->
+            <img src="img/miyan taushe.jpg" alt="Miyan Taushe" class="w-full object-cover">
+            <div class="p-4 w-full border-t-0">
+              <span class="font-bold">Miyan Taushe</span>
+              <span class="block text-gray-500 text-sm">Recipe by Musa</span>
+            </div>
+            <div class="badge"> <!-- Badge -->
+              <svg class="inline-block w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>25 mins</span>
             </div>
           </div> <!-- A single card end -->
         </div>
 
-        <h4>Most popular</h4>
-        <div>
+        <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most popular</h4>
+        <div class="mt-8">
           <!-- Cards for above heading-->
         </div>
 
-        <div>
-          <div>Load More</div>
+        <div class="flex justify-center">
+          <div class="bg-secondary-100 text-secondary-200 
+          btn hover:shadow-inner transform hover:scale-105 hover:bg-opacity-50 transition ease-out
+          duration-500">Load More</div>
         </div>
       </div> <!-- for card and other contents-->
     </main>
   </div>
+
+  <script src="../src/logic.js"></script>
 </body>
 </html>
